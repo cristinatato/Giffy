@@ -16,4 +16,16 @@
   padding: 20px;
 }
 
+.Enlaces{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+}
+
+.Enlaces a{
+  color: white;
+  text-decoration: white;
+}
+
 

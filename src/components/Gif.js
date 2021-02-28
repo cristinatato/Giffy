@@ -3,11 +3,10 @@ import './Gif.css'
 
 function Gif({ title, id, url}) {
     return (
-        <div className="Gif">
+        <a href={`#${id}`} className="Gif">
             <h4>{title}</h4>
             <img src={url} alt={title} />
-            <p>{id}</p>
-        </div>
+        </a>
     )
 }
 
