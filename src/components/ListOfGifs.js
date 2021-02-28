@@ -9,17 +9,6 @@ function ListOfGifs({ keyword }) {
         getGifs({ keyword }).then(gifs => setGifs(gifs))
     })
 
-
-    {/* {
-        gifs.map((singleGif) => 
-        <Gif 
-        title={singleGif.title} 
-        url={singleGif.url} 
-        id={singleGif.id} 
-        key={singleGif.id}
-        />) 
-    } */}
-
     return gifs.map(({ id, title, url }) =>
         <Gif
             title={title}

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <section className="App-content">
-       <ListOfGifs keyword='WandaVision'/>
+       <ListOfGifs keyword='Marvel'/>
         </section>
       </div>
   )
