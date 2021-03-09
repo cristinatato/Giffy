@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <section className="App-content">
         <div className="Enlaces">
-          <a href="/gif/:Marvel">Marvel</a>
-          <a href="/gif/:Harry potter">Harry potter</a>
-          <a href="/gif/:Asterix">Asterix</a>
+          <Link to="/gif/:Marvel">Marvel</Link>
+          <Link to="/gif/:Harry potter">Harry potter</Link>
+          <Link to="/gif/:Asterix">Asterix</Link>
         </div>
 
         <Route 
