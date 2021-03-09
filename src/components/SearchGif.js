@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
-
-
-
+import { useLocation } from "wouter";
 
 function SearchGif() {
-    const [inputValue, setInput] = useState([]);
-    const value = ''
+    const [keyWord, setKeyword] = useState('');
+    const [path, pushLocation] = useLocation();
 
-    const handleInput = () => {
-        console.log(inputValue);
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        pushLocation(`/gif/${keyWord}`)
+        console.log(keyWord);
     }
-
     return (
         <>
-        <label htmlFor="gif">Busca tu gif</label>
-        <input type="text" onChange={(e)=> setInput(e.target.value)}></input>
-        <button className="button" onClick={handleInput}>Buscar</button>
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="gif">Busca tu gif</label>
+                <input type="text" onChange={(e) => setKeyword(e.target.value)}></input>
+            </form>
         </>
     )
 }

@@ -3,6 +3,7 @@ import Gif from './Gif'
 import getGifs from '../services/getGifs';
 
 function ListOfGifs({ params }) {
+    console.log(params);
     const [gifs, setGifs] = useState([]);
     const { keyword } = params
 
